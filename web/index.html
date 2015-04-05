@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Paradox</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Plotwist</h1>
+					<p>By Rohit Malhotra</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Do You Know Your Movies?</a>
+				</footer>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>This is Plotwist</h2>
+				</header>
+				<p>A text based game for the movie buff in you. Do you think you know them all? Go on.<br>
+				 Think again. Tread carefully. Take a <strong>guess</strong>.</p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">Proceed To Play</a>
+				</footer>
+			</section>
+
+
+		<!-- Feature 2 -->
+			<article class="container box style1 left game">
+				<a href="#" class="image fit"><img src="images/guess.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+                        {{w}}
+						<h2>{{strike}}<br />
+						{{ntf}}</h2>
+					</header>
+<font face = "Bebas Neue" size="10" color="#ecf0f1">
+<form action="/guess" method="post">
+  <center><input id="box" type="text" class="textbox" name="content" autocomplete="off"></center>
+
+
+<center><input type="submit" class="btn guess" value="Guess"></center>
+</form>
+<form action="/reset" method="post">
+<center><input type="submit" class="btn reset" value="Reset"></center>
+</form>
+</font>
+				</div>
+			</article>
+
+		<section id="footer">
+			<ul class="icons menu">
+				
+				<li>&copy;Made as a project for Python and GAE Workshop</li><li>Rohit Malhotra</a></li>
+
+			</ul>
+			
+				
+			
+		</section>
+        
+<style>
+.game{
+    max-height: 80vh;
+}    
+
+.box.style1.left .image img{
+	height: 100%;
+	width: 100%;
+}
+    
+.guess, .reset{
+    height: 20%;
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+}   
+    
+
+        
+</style>
+
+	</body>
+</html>
